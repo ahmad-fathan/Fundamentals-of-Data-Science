@@ -6,12 +6,12 @@ Seluruh kode ditulis dalam bentuk notebook Jupyter (`.ipynb`) dan mengikuti modu
 
 ## Isi
 
-| Berkas | Bagian modul | Pokok bahasan |
-| --- | --- | --- |
-| [`bab-a-python-dan-lingkungan-kerja-data-science.ipynb`](modul-01-fundamen-sains-data/bab-a-python-dan-lingkungan-kerja-data-science.ipynb) | A | Python dalam data science, notebook Jupyter/Colab/VS Code, antarmuka Colab, runtime, sumber dataset, urutan eksekusi cell, Gemini, VS Code |
-| [`bab-b-library-python-untuk-data-science.ipynb`](modul-01-fundamen-sains-data/bab-b-library-python-untuk-data-science.ipynb) | B | Impor library, array NumPy, DataFrame pandas, grafik Matplotlib |
-| [`bab-c-probabilitas-dan-statistika-dengan-python.ipynb`](modul-01-fundamen-sains-data/bab-c-probabilitas-dan-statistika-dengan-python.ipynb) | C | Statistik deskriptif, probabilitas lewat simulasi, variabel acak diskrit (Bernoulli, binomial, PMF, CDF), variabel acak kontinu (normal, PDF), studi kasus terpadu |
-| [`latihan/latihan-akhir.ipynb`](modul-01-fundamen-sains-data/latihan/latihan-akhir.ipynb) | Latihan | Penyelesaian Latihan 1 sampai 4 beserta interpretasinya |
+| Folder | Berkas | Bagian modul | Pokok bahasan |
+| --- | --- | --- | --- |
+| **Introduction to Data Science** | [`bab-a-python-dan-lingkungan-kerja-data-science.ipynb`](Introduction%20to%20Data%20Science/bab-a-python-dan-lingkungan-kerja-data-science.ipynb) | A | Python dalam data science, notebook Jupyter/Colab/VS Code, antarmuka Colab, runtime, sumber dataset, urutan eksekusi cell, Gemini, VS Code |
+| **Introduction to Data Science** | [`bab-b-library-python-untuk-data-science.ipynb`](Introduction%20to%20Data%20Science/bab-b-library-python-untuk-data-science.ipynb) | B | Impor library, array NumPy, DataFrame pandas, grafik Matplotlib |
+| **Probability and Statistics** | [`bab-c-probabilitas-dan-statistika-dengan-python.ipynb`](Probability%20and%20Statistics/bab-c-probabilitas-dan-statistika-dengan-python.ipynb) | C | Statistik deskriptif, probabilitas lewat simulasi, variabel acak diskrit (Bernoulli, binomial, PMF, CDF), variabel acak kontinu (normal, PDF), studi kasus terpadu |
+| **—** | [`latihan/latihan-akhir.ipynb`](latihan/latihan-akhir.ipynb) | Latihan | Penyelesaian Latihan 1 sampai 4 beserta interpretasinya |
 
 Setiap notebook memuat penjelasan teori, kode contoh, **hasil yang diharapkan**, dan interpretasi — mengikuti struktur modul. Notebook latihan memuat penyelesaian sebagai acuan; mahasiswa dianjurkan mengerjakan sendiri terlebih dahulu.
 
@@ -21,15 +21,16 @@ Setiap notebook memuat penjelasan teori, kode contoh, **hasil yang diharapkan**,
 .
 ├── README.md
 ├── requirements.txt
-└── modul-01-fundamen-sains-data/
-    ├── bab-a-python-dan-lingkungan-kerja-data-science.ipynb
-    ├── bab-b-library-python-untuk-data-science.ipynb
-    ├── bab-c-probabilitas-dan-statistika-dengan-python.ipynb
-    └── latihan/
-        └── latihan-akhir.ipynb
+├── Introduction to Data Science/
+│   ├── bab-a-python-dan-lingkungan-kerja-data-science.ipynb
+│   └── bab-b-library-python-untuk-data-science.ipynb
+├── Probability and Statistics/
+│   └── bab-c-probabilitas-dan-statistika-dengan-python.ipynb
+└── latihan/
+    └── latihan-akhir.ipynb
 ```
 
-Modul berikutnya cukup ditambah sebagai folder sejajar, misalnya `modul-02-.../`, dengan pola nama `bab-<huruf>-<judul-bab-dalam-huruf-kecil>.ipynb`.
+Setiap notebook diberi nama dengan pola `bab-<huruf>-<judul-bab-dalam-huruf-kecil>.ipynb` dan ditempatkan pada folder sesuai topiknya. Bab baru cukup ditambahkan ke folder yang sesuai, atau dibuat folder topik baru sejajar dengan yang sudah ada.
 
 ## Menjalankan
 
