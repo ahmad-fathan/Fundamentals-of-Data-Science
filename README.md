@@ -2,7 +2,7 @@
 
 Source code contoh dan latihan untuk mata kuliah **Fundamental of Data Science**, Program Studi Sarjana Informatika, Universitas Islam Indonesia.
 
-Seluruh kode ditulis dalam bentuk notebook Jupyter (`.ipynb`) dan mengikuti modul **Fundamen Sains Data: Pengantar Python untuk Sains Data, Probabilitas, dan Statistika**. Setiap notebook sudah dijalankan dari awal sampai akhir tanpa galat, dan outputnya (termasuk grafik) tersimpan di dalam file, sehingga dapat dibaca langsung di GitHub maupun dijalankan ulang di Google Colab.
+Seluruh kode ditulis dalam bentuk notebook Jupyter (`.ipynb`) dan mengikuti modul **Fundamen Sains Data: Pengantar Python untuk Sains Data, Probabilitas, dan Statistika** serta modul **Pengantar Machine Learning: Supervised Learning dan Regresi Linier**. Setiap notebook sudah dijalankan dari awal sampai akhir tanpa galat, dan outputnya (termasuk grafik) tersimpan di dalam file, sehingga dapat dibaca langsung di GitHub maupun dijalankan ulang di Google Colab.
 
 ## Isi
 
@@ -12,6 +12,8 @@ Seluruh kode ditulis dalam bentuk notebook Jupyter (`.ipynb`) dan mengikuti modu
 | **Introduction to Data Science** | [`bab-b-library-python-untuk-data-science.ipynb`](Introduction%20to%20Data%20Science/bab-b-library-python-untuk-data-science.ipynb) | B | Impor library, array NumPy, DataFrame pandas, grafik Matplotlib |
 | **Probability and Statistics** | [`bab-c-probabilitas-dan-statistika-dengan-python.ipynb`](Probability%20and%20Statistics/bab-c-probabilitas-dan-statistika-dengan-python.ipynb) | C | Statistik deskriptif, probabilitas lewat simulasi, variabel acak diskrit (Bernoulli, binomial, PMF, CDF), variabel acak kontinu (normal, PDF), studi kasus terpadu |
 | **Probability and Statistics** | [`latihan-akhir.ipynb`](Probability%20and%20Statistics/latihan-akhir.ipynb) | Latihan | Penyelesaian Latihan 1 sampai 4 beserta interpretasinya |
+| **Introduction to Machine Learning** | [`bab-d-regresi-linier-dengan-python.ipynb`](Introduction%20to%20Machine%20Learning/bab-d-regresi-linier-dengan-python.ipynb) | D | Regresi linier manual dengan NumPy, pembagian data latih dan uji, `LinearRegression` scikit-learn, evaluasi MAE/MSE/RMSE/R², prediksi dan ekstrapolasi, plot residual, gradient descent |
+| **Introduction to Machine Learning** | [`latihan-akhir.ipynb`](Introduction%20to%20Machine%20Learning/latihan-akhir.ipynb) | Latihan | Penyelesaian Latihan 1 sampai 5 (dataset `diabetes`) beserta interpretasinya |
 
 Setiap notebook memuat penjelasan teori, kode contoh, **hasil yang diharapkan**, dan interpretasi — mengikuti struktur modul. Notebook latihan memuat penyelesaian sebagai acuan; mahasiswa dianjurkan mengerjakan sendiri terlebih dahulu.
 
@@ -24,6 +26,9 @@ Setiap notebook memuat penjelasan teori, kode contoh, **hasil yang diharapkan**,
 ├── Introduction to Data Science/
 │   ├── bab-a-python-dan-lingkungan-kerja-data-science.ipynb
 │   └── bab-b-library-python-untuk-data-science.ipynb
+├── Introduction to Machine Learning/
+│   ├── bab-d-regresi-linier-dengan-python.ipynb
+│   └── latihan-akhir.ipynb
 └── Probability and Statistics/
     ├── bab-c-probabilitas-dan-statistika-dengan-python.ipynb
     └── latihan-akhir.ipynb
@@ -35,7 +40,7 @@ Setiap notebook diberi nama dengan pola `bab-<huruf>-<judul-bab-dalam-huruf-keci
 
 ### Google Colab
 
-Buka <https://colab.research.google.com>, pilih **File > Upload notebook**, lalu unggah file `.ipynb`. Library NumPy, pandas, Matplotlib, dan SciPy sudah tersedia. Jalankan **Runtime > Restart session and run all** untuk memastikan seluruh cell berjalan tanpa galat.
+Buka <https://colab.research.google.com>, pilih **File > Upload notebook**, lalu unggah file `.ipynb`. Library NumPy, pandas, Matplotlib, SciPy, dan scikit-learn sudah tersedia. Jalankan **Runtime > Restart session and run all** untuk memastikan seluruh cell berjalan tanpa galat.
 
 ### Lokal (Jupyter / VS Code)
 
@@ -53,6 +58,7 @@ Butuh Python 3.9 atau lebih baru.
 - Cell yang hanya berjalan di Google Colab (`google.colab`, `kagglehub`) dibungkus `try/except`, sehingga notebook tetap berjalan tanpa galat di Jupyter maupun VS Code.
 - Hasil simulasi memakai `np.random.default_rng(42)` agar dapat diulang. Angka hasil simulasi dan digit terakhir hasil pembulatan dapat berbeda antar versi NumPy/SciPy; interpretasi tidak berubah.
 - Sumber dataset contoh: [seaborn-data](https://github.com/mwaskom/seaborn-data).
+- Bagian D memakai data simulasi (seed 42) dan dataset `diabetes` bawaan scikit-learn, sehingga tidak memerlukan unduhan.
 
 ## Penggunaan
 
