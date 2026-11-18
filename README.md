@@ -2,7 +2,7 @@
 
 Source code contoh dan latihan untuk mata kuliah **Fundamental of Data Science**, Program Studi Sarjana Informatika, Universitas Islam Indonesia.
 
-Seluruh kode ditulis dalam bentuk notebook Jupyter (`.ipynb`) dan mengikuti modul **Fundamen Sains Data: Pengantar Python untuk Sains Data, Probabilitas, dan Statistika** serta modul **Pengantar Machine Learning: Supervised Learning dan Regresi Linier**. Setiap notebook sudah dijalankan dari awal sampai akhir tanpa galat, dan outputnya (termasuk grafik) tersimpan di dalam file, sehingga dapat dibaca langsung di GitHub maupun dijalankan ulang di Google Colab.
+Seluruh kode ditulis dalam bentuk notebook Jupyter (`.ipynb`) dan mengikuti modul **Fundamen Sains Data: Pengantar Python untuk Sains Data, Probabilitas, dan Statistika** serta modul **Pengantar Machine Learning: Supervised Learning dan Regresi Linier**, dan modul **Naïve Bayes Classifier**. Setiap notebook sudah dijalankan dari awal sampai akhir tanpa galat, dan outputnya (termasuk grafik) tersimpan di dalam file, sehingga dapat dibaca langsung di GitHub maupun dijalankan ulang di Google Colab.
 
 ## Isi
 
@@ -14,6 +14,8 @@ Seluruh kode ditulis dalam bentuk notebook Jupyter (`.ipynb`) dan mengikuti modu
 | **Probability and Statistics** | [`latihan-akhir.ipynb`](Probability%20and%20Statistics/latihan-akhir.ipynb) | Latihan | Penyelesaian Latihan 1 sampai 4 beserta interpretasinya |
 | **Introduction to Machine Learning** | [`bab-d-regresi-linier-dengan-python.ipynb`](Introduction%20to%20Machine%20Learning/bab-d-regresi-linier-dengan-python.ipynb) | D | Regresi linier manual dengan NumPy, pembagian data latih dan uji, `LinearRegression` scikit-learn, evaluasi MAE/MSE/RMSE/R², prediksi dan ekstrapolasi, plot residual, gradient descent |
 | **Introduction to Machine Learning** | [`latihan-akhir.ipynb`](Introduction%20to%20Machine%20Learning/latihan-akhir.ipynb) | Latihan | Penyelesaian Latihan 1 sampai 5 (dataset `diabetes`) beserta interpretasinya |
+| **Classification** | [`bab-e1-naive-bayes-data-tabular.ipynb`](Classification/bab-e1-naive-bayes-data-tabular.ipynb) | E1 | Naïve Bayes untuk data tabular: memeriksa hitungan *Play Golf* di modul dengan `CategoricalNB`, dataset Penguin dengan `GaussianNB`, prior dan rata-rata/standar deviasi yang dipelajari model, perhitungan manual vs `predict_proba`, evaluasi |
+| **Classification** | [`bab-e2-naive-bayes-data-teks.ipynb`](Classification/bab-e2-naive-bayes-data-teks.ipynb) | E2 | Naïve Bayes untuk data teks: deteksi SMS spam dengan `CountVectorizer` + `MultinomialNB`, mencegah kebocoran data, kata paling menandakan spam, precision/recall pada data tidak seimbang, pengaruh Laplace smoothing (`alpha`) |
 
 Setiap notebook memuat penjelasan teori, kode contoh, **hasil yang diharapkan**, dan interpretasi — mengikuti struktur modul. Notebook latihan memuat penyelesaian sebagai acuan; mahasiswa dianjurkan mengerjakan sendiri terlebih dahulu.
 
@@ -23,6 +25,9 @@ Setiap notebook memuat penjelasan teori, kode contoh, **hasil yang diharapkan**,
 .
 ├── README.md
 ├── requirements.txt
+├── Classification/
+│   ├── bab-e1-naive-bayes-data-tabular.ipynb
+│   └── bab-e2-naive-bayes-data-teks.ipynb
 ├── Introduction to Data Science/
 │   ├── bab-a-python-dan-lingkungan-kerja-data-science.ipynb
 │   └── bab-b-library-python-untuk-data-science.ipynb
@@ -59,6 +64,7 @@ Butuh Python 3.9 atau lebih baru.
 - Hasil simulasi memakai `np.random.default_rng(42)` agar dapat diulang. Angka hasil simulasi dan digit terakhir hasil pembulatan dapat berbeda antar versi NumPy/SciPy; interpretasi tidak berubah.
 - Sumber dataset contoh: [seaborn-data](https://github.com/mwaskom/seaborn-data).
 - Bagian D memakai data simulasi (seed 42) dan dataset `diabetes` bawaan scikit-learn, sehingga tidak memerlukan unduhan.
+- Bagian E1 memuat dataset Penguin dari [seaborn-data](https://github.com/mwaskom/seaborn-data). Bagian E2 memuat [SMS Spam Collection](https://archive.ics.uci.edu/dataset/228/sms+spam+collection) (Almeida dan Hidalgo, 2011) dari salinan publik di GitHub. Keduanya memerlukan koneksi internet saat cell pemuatan data dijalankan.
 
 ## Penggunaan
 
