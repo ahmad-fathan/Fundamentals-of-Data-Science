@@ -1,75 +1,44 @@
 # Fundamentals of Data Science
 
-Source code contoh dan latihan untuk mata kuliah **Fundamental of Data Science**, Program Studi Sarjana Informatika, Universitas Islam Indonesia.
-
-Seluruh kode ditulis dalam bentuk notebook Jupyter (`.ipynb`) dan mengikuti modul **Fundamen Sains Data: Pengantar Python untuk Sains Data, Probabilitas, dan Statistika** serta modul **Pengantar Machine Learning: Supervised Learning dan Regresi Linier**, dan modul **Naïve Bayes Classifier**. Setiap notebook sudah dijalankan dari awal sampai akhir tanpa galat, dan outputnya (termasuk grafik) tersimpan di dalam file, sehingga dapat dibaca langsung di GitHub maupun dijalankan ulang di Google Colab.
+Notebook Jupyter untuk mata kuliah **Fundamentals of Data Science**, Program Studi Sarjana Informatika, Universitas Islam Indonesia.
 
 ## Isi
 
-| Folder | Berkas | Bagian modul | Pokok bahasan |
-| --- | --- | --- | --- |
-| **Introduction to Data Science** | [`bab-a-python-dan-lingkungan-kerja-data-science.ipynb`](Introduction%20to%20Data%20Science/bab-a-python-dan-lingkungan-kerja-data-science.ipynb) | A | Python dalam data science, notebook Jupyter/Colab/VS Code, antarmuka Colab, runtime, sumber dataset, urutan eksekusi cell, Gemini, VS Code |
-| **Introduction to Data Science** | [`bab-b-library-python-untuk-data-science.ipynb`](Introduction%20to%20Data%20Science/bab-b-library-python-untuk-data-science.ipynb) | B | Impor library, array NumPy, DataFrame pandas, grafik Matplotlib |
-| **Probability and Statistics** | [`bab-c-probabilitas-dan-statistika-dengan-python.ipynb`](Probability%20and%20Statistics/bab-c-probabilitas-dan-statistika-dengan-python.ipynb) | C | Statistik deskriptif, probabilitas lewat simulasi, variabel acak diskrit (Bernoulli, binomial, PMF, CDF), variabel acak kontinu (normal, PDF), studi kasus terpadu |
-| **Probability and Statistics** | [`latihan-akhir.ipynb`](Probability%20and%20Statistics/latihan-akhir.ipynb) | Latihan | Penyelesaian Latihan 1 sampai 4 beserta interpretasinya |
-| **Introduction to Machine Learning** | [`bab-d-regresi-linier-dengan-python.ipynb`](Introduction%20to%20Machine%20Learning/bab-d-regresi-linier-dengan-python.ipynb) | D | Regresi linier manual dengan NumPy, pembagian data latih dan uji, `LinearRegression` scikit-learn, evaluasi MAE/MSE/RMSE/R², prediksi dan ekstrapolasi, plot residual, gradient descent |
-| **Introduction to Machine Learning** | [`latihan-akhir.ipynb`](Introduction%20to%20Machine%20Learning/latihan-akhir.ipynb) | Latihan | Penyelesaian Latihan 1 sampai 5 (dataset `diabetes`) beserta interpretasinya |
-| **Classification** | [`bab-e1-naive-bayes-data-tabular.ipynb`](Classification/bab-e1-naive-bayes-data-tabular.ipynb) | E1 | Naïve Bayes untuk data tabular: memeriksa hitungan *Play Golf* di modul dengan `CategoricalNB`, dataset Penguin dengan `GaussianNB`, prior dan rata-rata/standar deviasi yang dipelajari model, perhitungan manual vs `predict_proba`, evaluasi |
-| **Classification** | [`bab-e2-naive-bayes-data-teks.ipynb`](Classification/bab-e2-naive-bayes-data-teks.ipynb) | E2 | Naïve Bayes untuk data teks: deteksi SMS spam dengan `CountVectorizer` + `MultinomialNB`, mencegah kebocoran data, kata paling menandakan spam, precision/recall pada data tidak seimbang, pengaruh Laplace smoothing (`alpha`) |
+| Folder | Notebook | Topik |
+| --- | --- | --- |
+| Introduction to Data Science | `bab-a-python-dan-lingkungan-kerja-data-science.ipynb` | Python, Jupyter/Colab, sumber dataset |
+| Introduction to Data Science | `bab-b-library-python-untuk-data-science.ipynb` | NumPy, pandas, Matplotlib |
+| Probability and Statistics | `bab-c-probabilitas-dan-statistika-dengan-python.ipynb` | Statistik deskriptif, probabilitas, distribusi |
+| Probability and Statistics | `latihan-akhir.ipynb` | Penyelesaian Latihan 1–4 |
+| Introduction to Machine Learning | `bab-d-regresi-linier-dengan-python.ipynb` | Regresi linier, metrik evaluasi, gradient descent |
+| Introduction to Machine Learning | `latihan-akhir.ipynb` | Penyelesaian Latihan 1–5 (`diabetes`) |
+| Classification | `bab-e1-naive-bayes-data-tabular.ipynb` | Naïve Bayes data tabular |
+| Classification | `bab-e2-naive-bayes-data-teks.ipynb` | Naïve Bayes data teks (SMS spam) |
 
-Setiap notebook memuat penjelasan teori, kode contoh, **hasil yang diharapkan**, dan interpretasi — mengikuti struktur modul. Notebook latihan memuat penyelesaian sebagai acuan; mahasiswa dianjurkan mengerjakan sendiri terlebih dahulu.
-
-## Struktur folder
-
-```
-.
-├── README.md
-├── requirements.txt
-├── Classification/
-│   ├── bab-e1-naive-bayes-data-tabular.ipynb
-│   └── bab-e2-naive-bayes-data-teks.ipynb
-├── Introduction to Data Science/
-│   ├── bab-a-python-dan-lingkungan-kerja-data-science.ipynb
-│   └── bab-b-library-python-untuk-data-science.ipynb
-├── Introduction to Machine Learning/
-│   ├── bab-d-regresi-linier-dengan-python.ipynb
-│   └── latihan-akhir.ipynb
-└── Probability and Statistics/
-    ├── bab-c-probabilitas-dan-statistika-dengan-python.ipynb
-    └── latihan-akhir.ipynb
-```
-
-Setiap notebook diberi nama dengan pola `bab-<huruf>-<judul-bab-dalam-huruf-kecil>.ipynb` dan ditempatkan pada folder sesuai topiknya. Bab baru cukup ditambahkan ke folder yang sesuai, atau dibuat folder topik baru sejajar dengan yang sudah ada.
+Semua notebook sudah dijalankan lengkap dengan output tersimpan.
 
 ## Menjalankan
 
-### Google Colab
+**Colab:** unggah `.ipynb` ke <https://colab.research.google.com>, lalu *Runtime > Restart session and run all*.
 
-Buka <https://colab.research.google.com>, pilih **File > Upload notebook**, lalu unggah file `.ipynb`. Library NumPy, pandas, Matplotlib, SciPy, dan scikit-learn sudah tersedia. Jalankan **Runtime > Restart session and run all** untuk memastikan seluruh cell berjalan tanpa galat.
-
-### Lokal (Jupyter / VS Code)
+**Lokal:**
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
+python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-jupyter notebook                # atau buka folder ini di VS Code
+jupyter notebook
 ```
 
-Butuh Python 3.9 atau lebih baru.
+Butuh Python 3.9+.
 
 ## Catatan
 
-- Cell yang hanya berjalan di Google Colab (`google.colab`, `kagglehub`) dibungkus `try/except`, sehingga notebook tetap berjalan tanpa galat di Jupyter maupun VS Code.
-- Hasil simulasi memakai `np.random.default_rng(42)` agar dapat diulang. Angka hasil simulasi dan digit terakhir hasil pembulatan dapat berbeda antar versi NumPy/SciPy; interpretasi tidak berubah.
-- Sumber dataset contoh: [seaborn-data](https://github.com/mwaskom/seaborn-data).
-- Bagian D memakai data simulasi (seed 42) dan dataset `diabetes` bawaan scikit-learn, sehingga tidak memerlukan unduhan.
-- Bagian E1 memuat dataset Penguin dari [seaborn-data](https://github.com/mwaskom/seaborn-data). Bagian E2 memuat [SMS Spam Collection](https://archive.ics.uci.edu/dataset/228/sms+spam+collection) (Almeida dan Hidalgo, 2011) dari salinan publik di GitHub. Keduanya memerlukan koneksi internet saat cell pemuatan data dijalankan.
+- Dataset diambil dari [seaborn-data](https://github.com/mwaskom/seaborn-data) dan [SMS Spam Collection](https://archive.ics.uci.edu/dataset/228/sms+spam+collection); beberapa notebook butuh koneksi internet saat memuat data.
+- Simulasi memakai `np.random.default_rng(42)`; angka dapat berbeda sedikit antar versi library.
 
 ## Penggunaan
 
-Disediakan untuk keperluan pembelajaran. Mahasiswa dipersilahkan membaca, menjalankan, dan mengubahnya untuk keperluan belajar.
+Untuk keperluan pembelajaran — silakan baca, jalankan, dan ubah.
 
 ---
-
-**Ahmad Fathan Hidayatullah** — Program Studi Sarjana Informatika, Universitas Islam Indonesia
+**Ahmad Fathan Hidayatullah** — Informatika, Universitas Islam Indonesia
