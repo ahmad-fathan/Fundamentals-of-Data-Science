@@ -14,6 +14,7 @@ Notebook Jupyter untuk mata kuliah **Fundamentals of Data Science**, Program Stu
 | Introduction to Machine Learning | `latihan-akhir.ipynb` | Penyelesaian Latihan 1–5 (`diabetes`) |
 | Classification | `bab-e1-naive-bayes-data-tabular.ipynb` | Naïve Bayes data tabular |
 | Classification | `bab-e2-naive-bayes-data-teks.ipynb` | Naïve Bayes data teks (SMS spam) |
+| Classification | `bab-e3-naive-bayes-prediksi-diabetes.ipynb` | Naïve Bayes prediksi diabetes |
 
 Semua notebook sudah dijalankan lengkap dengan output tersimpan.
 
