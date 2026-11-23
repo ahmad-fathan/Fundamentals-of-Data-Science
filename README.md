@@ -30,15 +30,3 @@ jupyter notebook
 ```
 
 Butuh Python 3.9+.
-
-## Catatan
-
-- Dataset diambil dari [seaborn-data](https://github.com/mwaskom/seaborn-data) dan [SMS Spam Collection](https://archive.ics.uci.edu/dataset/228/sms+spam+collection); beberapa notebook butuh koneksi internet saat memuat data.
-- Simulasi memakai `np.random.default_rng(42)`; angka dapat berbeda sedikit antar versi library.
-
-## Penggunaan
-
-Untuk keperluan pembelajaran — silakan baca, jalankan, dan ubah.
-
----
-**Ahmad Fathan Hidayatullah** — Informatika, Universitas Islam Indonesia
